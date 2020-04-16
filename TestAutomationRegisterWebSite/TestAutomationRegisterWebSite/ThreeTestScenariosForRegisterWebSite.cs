@@ -105,7 +105,7 @@ namespace TestAutomationRegisterWebSite
             IWebElement SubmitButton = driver.FindElement(By.Id("submitbtn"));
             SubmitButton.Click();
 
-            WebDriverWait wait = new WebDriverWait(driver,System.TimeSpan.FromSeconds(15));
+            WebDriverWait wait = new WebDriverWait(driver,System.TimeSpan.FromSeconds(35));
             wait.Until(driver => driver.FindElement(By.XPath("/html/body/section/div[1]/div/div[2]/h4[1]")));
             IWebElement web_table_edit_instructions = driver.FindElement(By.XPath("/html/body/section/div[1]/div/div[2]/h4[1]"));
             string web_table_edit_text = web_table_edit_instructions.Text;
